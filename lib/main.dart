@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
@@ -37,12 +38,58 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 3.0,
                 ),
               ),
+              SizedBox(
+                height: 20.0,
+                width: 180.0,
+                child: Divider(
+                  color: Colors.teal[100],
+                ),
+              ),
               Card(
                 color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal[900],
+                  ),
+                  title: Text(
+                    '+48 123 456 789',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                      color: Colors.teal[900],
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal[900],
+                  ),
+                  title: Text(
+                    'wojciechkonury@gmail.com',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                      color: Colors.teal[900],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/* Row(
                     children: <Widget>[
                       Icon(
                         Icons.phone,
@@ -61,40 +108,4 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                     ],
-                  ),
-                ),
-              ),
-              Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Padding(
-                  padding: EdgeInsets.all(10.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.email,
-                        size: 20.0,
-                        color: Colors.teal[900],
-                      ),
-                      SizedBox(
-                        width: 25.0,
-                      ),
-                      Text(
-                        'wojciechkonury@gmail.com',
-                        style: TextStyle(
-                            fontFamily: 'Source Sans Pro',
-                            fontSize: 20.0,
-                            color: Colors.teal[900]
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
+                  ), */
