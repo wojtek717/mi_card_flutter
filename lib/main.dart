@@ -22,9 +22,74 @@ class MyApp extends StatelessWidget {
               Text(
                 'Wojciech Konury',
                 style: TextStyle(
-                    fontSize: 25.0,
+                    fontFamily: 'Pacifico',
+                    fontSize: 40,
                     fontWeight: FontWeight.bold,
                     color: Colors.white),
+              ),
+              Text(
+                'FLUTTER DEVELOPER',
+                style: TextStyle(
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 20.0,
+                  color: Colors.teal[100],
+                  fontWeight: FontWeight.bold,
+                  letterSpacing: 3.0,
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.phone,
+                        size: 20.0,
+                        color: Colors.teal[900],
+                      ),
+                      SizedBox(
+                        width: 25.0,
+                      ),
+                      Text(
+                        '+48 123 456 789',
+                        style: TextStyle(
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20.0,
+                          color: Colors.teal[900]
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                child: Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.email,
+                        size: 20.0,
+                        color: Colors.teal[900],
+                      ),
+                      SizedBox(
+                        width: 25.0,
+                      ),
+                      Text(
+                        'wojciechkonury@gmail.com',
+                        style: TextStyle(
+                            fontFamily: 'Source Sans Pro',
+                            fontSize: 20.0,
+                            color: Colors.teal[900]
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ],
           ),
